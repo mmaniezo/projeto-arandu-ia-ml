@@ -3,8 +3,18 @@
 Componente de Inteligência Artificial / Machine Learning do projeto **Arandu**,
 uma plataforma que leva dados aeroespaciais e climáticos ao pequeno agricultor
 familiar. Este repositório contém **apenas o modelo de ML**: dados, treino e
-avaliação. As demais camadas do produto (app mobile, backend, banco geoespacial,
-IA Generativa e leitura por voz) ficam como evolução futura.
+avaliação.
+
+---
+
+## Integrantes do Grupo
+
+| Nome completo | RM |
+|---------------|----|
+| _Caio Alexandre dos Santos_ | _558460_ |
+| _Leandro do Nascimento Souza_ | _558893_ |
+| _Rafael de Mônaco Maniezo_ | _556079_ |
+| _Vinicius Rozas Pannuci de Paula Cont_ | _555338_ |
 
 ---
 
@@ -175,23 +185,3 @@ projeto-arandu-ai/
 │   └── prever.py              # inferência de demonstração
 ├── requirements.txt
 └── README.md
-```
-
----
-
-## 8. Integrantes do Grupo
-
-| Nome completo | RM |
-|---------------|----|
-| _(preencher)_ | _(preencher)_ |
-
----
-
-## 9. Trabalhos Futuros
-
-- Substituir o dataset sintético pelas **fontes reais** (NASA POWER, INMET,
-  IBGE/PAM, NDVI Sentinel-2/MODIS).
-- Expor o modelo como **microsserviço (API REST)** para integração com o backend.
-- Calibrar probabilidades e tratar o desbalanceamento (ex.: SMOTE, `class_weight`).
-- Validar os rótulos com **agrônomos parceiros**.
-- Integrar a saída ao restante do produto Arandu (painel, orientação por voz).
