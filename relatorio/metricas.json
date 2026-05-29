@@ -1,0 +1,92 @@
+{
+  "melhor_modelo": "MLP",
+  "validacao_cruzada": {
+    "Regressão Logística": {
+      "acuracia_cv": 0.7733333333333332,
+      "acuracia_cv_std": 0.012032940898494703,
+      "f1_macro_cv": 0.7082567253904737,
+      "f1_macro_cv_std": 0.015568071979228016
+    },
+    "Naive Bayes": {
+      "acuracia_cv": 0.7533333333333333,
+      "acuracia_cv_std": 0.017950549357115028,
+      "f1_macro_cv": 0.6509957322968399,
+      "f1_macro_cv_std": 0.02665218834028091
+    },
+    "Árvore de Decisão": {
+      "acuracia_cv": 0.7041666666666666,
+      "acuracia_cv_std": 0.017824374696839517,
+      "f1_macro_cv": 0.6194920821482132,
+      "f1_macro_cv_std": 0.01738728160426468
+    },
+    "MLP": {
+      "acuracia_cv": 0.8004166666666667,
+      "acuracia_cv_std": 0.03548767391644598,
+      "f1_macro_cv": 0.7428464996407598,
+      "f1_macro_cv_std": 0.04747947834635652
+    }
+  },
+  "holdout": {
+    "acuracia": 0.825,
+    "f1_macro": 0.7744296075295893
+  },
+  "atende_meta_75pct": true,
+  "importancia_features": {
+    "ndvi_atual": 0.20526523747596967,
+    "variacao_ndvi_15d": 0.0882612408379532,
+    "temperatura_media_7d": 0.10989640810149179,
+    "precipitacao_acumulada_30d": 0.287793688432913,
+    "radiacao_solar_media": 0.034620961512083256,
+    "tipo_cultura": 0.05476021439514207,
+    "dias_apos_plantio": 0.10511773409785748
+  },
+  "coeficientes_regressao_logistica": {
+    "Baixo": {
+      "num__ndvi_atual": 1.5519353945963095,
+      "num__variacao_ndvi_15d": 0.8379640917711126,
+      "num__temperatura_media_7d": -1.0093955690698138,
+      "num__precipitacao_acumulada_30d": 1.879997403851931,
+      "num__radiacao_solar_media": -0.5764037796885263,
+      "num__dias_apos_plantio": 0.15319781653896214,
+      "cat__tipo_cultura_1": -0.49866950849342145,
+      "cat__tipo_cultura_2": -0.6151946132878499,
+      "cat__tipo_cultura_3": 0.5318035346467817,
+      "cat__tipo_cultura_4": 0.7375404596994215,
+      "cat__tipo_cultura_5": -0.1598967535440014
+    },
+    "Moderado": {
+      "num__ndvi_atual": -0.024754369506691923,
+      "num__variacao_ndvi_15d": 0.029529523118223402,
+      "num__temperatura_media_7d": 0.05750265254645431,
+      "num__precipitacao_acumulada_30d": -0.00010907963525545988,
+      "num__radiacao_solar_media": 0.023507082403047372,
+      "num__dias_apos_plantio": -0.03116766785442897,
+      "cat__tipo_cultura_1": -0.0880062264426114,
+      "cat__tipo_cultura_2": -0.05731161370728246,
+      "cat__tipo_cultura_3": 0.011646711559681602,
+      "cat__tipo_cultura_4": 0.16548407028003279,
+      "cat__tipo_cultura_5": -0.0317599735684073
+    },
+    "Alto": {
+      "num__ndvi_atual": -1.5271810250896238,
+      "num__variacao_ndvi_15d": -0.8674936148893339,
+      "num__temperatura_media_7d": 0.951892916523365,
+      "num__precipitacao_acumulada_30d": -1.879888324216682,
+      "num__radiacao_solar_media": 0.5528966972854779,
+      "num__dias_apos_plantio": -0.1220301486845337,
+      "cat__tipo_cultura_1": 0.5866757349360313,
+      "cat__tipo_cultura_2": 0.6725062269951364,
+      "cat__tipo_cultura_3": -0.5434502462064673,
+      "cat__tipo_cultura_4": -0.903024529979446,
+      "cat__tipo_cultura_5": 0.1916567271124106
+    }
+  },
+  "clustering_kmeans": {
+    "inercia": 13336.620157817828,
+    "tamanho_clusters": [
+      894,
+      744,
+      762
+    ]
+  }
+}
